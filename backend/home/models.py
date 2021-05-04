@@ -13,8 +13,13 @@ class CustomText(models.Model):
     app from the project.
     """
 
-    title = models.CharField(
+    tina = models.CharField(
         max_length=150,
+        blank=True,
+    )
+    amuchin = models.BigIntegerField(
+        null=True,
+        blank=True,
     )
 
     def __str__(self):
