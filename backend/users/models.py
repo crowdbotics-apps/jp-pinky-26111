@@ -24,9 +24,9 @@ class User(AbstractUser):
         max_length=255,
     )
     pinky = models.DateField(
-        auto_now=True,
         null=True,
         blank=True,
+        auto_now=True,
     )
 
     def get_absolute_url(self):
